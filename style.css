@@ -1,0 +1,42 @@
+#colorBox {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    border: 2px solid black;
+}
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+} body{
+    background-color: black;
+}
+.carousel-container {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+.carousel-image {
+    width: 100%;
+    display: none;
+}
+.active {
+    display: block;
+}
+.btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+.prev {
+    left: 10px;
+}
+.next {
+    right: 10px;
+}

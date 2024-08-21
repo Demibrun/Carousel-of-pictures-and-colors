@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Carousel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon-32x32.png">
+</head>
+<body>
+    <div id="colorBox"></div>
+    <button onclick="changeColor()">Click</button>
+
+    <script>
+        const colors = ['blue', 'red', 'yellow', 'green', 'purple'];
+        let currentIndex = 0;
+
+        function changeColor() {
+            const colorBox = document.getElementById('colorBox');
+            colorBox.style.backgroundColor = colors[currentIndex];
+            
+            currentIndex++;
+            if (currentIndex >= colors.length) {
+                currentIndex = 0;
+            }
+        }
+
+        
+        changeColor();
+
+    </script>
+</body>
+</html>
